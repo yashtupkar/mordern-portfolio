@@ -6,7 +6,7 @@ const Projects = () => {
 
   return (
     <section id="projects" className="relative bg-custom-bg px-[5%] sm:px-[10%] py-[60px] sm:py-[100px] border-t border-white/5">
-      <div className="max-w-[1400px] mx-auto">
+      <div className="max-w-[1300px] mx-auto">
         <div className="mb-[40px] fade-in-scroll opacity-0 translate-y-[30px] transition-all duration-600 ease-out">
         <span className="block text-custom-accent font-heading text-xs font-bold tracking-[4px] uppercase mb-4">// PROJECTS</span>
         <h2 className="font-heading text-[clamp(1.6rem,5vw,2.8rem)] font-black tracking-tight leading-none uppercase text-custom-main mb-6">
@@ -18,11 +18,11 @@ const Projects = () => {
         <div className="w-[60px] h-[3px] bg-custom-accent shadow-accent-glow"></div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 lg:gap-x-20 gap-y-10 sm:gap-y-16 mt-10">
-        {projects.map((project, index) => (
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 lg:gap-x-12 gap-y-10 sm:gap-y-16 mt-10">
+        {projects.slice(0, 6).map((project, index) => (
           <Link 
             to={`/project/${project.id}`} 
-            className="group flex flex-col gap-5 fade-in-scroll opacity-0 translate-y-[30px] transition-all duration-700 ease-out cursor-pointer" 
+            className={`group flex flex-col gap-5 fade-in-scroll opacity-0 translate-y-[30px] transition-all duration-700 ease-out cursor-pointer ${index >= 4 ? 'hidden lg:flex' : 'flex'}`} 
             key={project.id || index}
           >
             <div className="relative w-full aspect-[16/12] sm:aspect-[16/12] rounded overflow-hidden border border-white/5 transition-all duration-500 group-hover:border-custom-accent/30 group-hover:shadow-[0_20px_40px_rgba(0,0,0,0.5)] bg-white/3">
@@ -50,7 +50,7 @@ const Projects = () => {
               </p>
               <div className="flex flex-wrap gap-2 mt-1 sm:mt-2">
                 {project.tech.map((t, i) => (
-                  <span key={i} className="bg-[#1a1a1a] text-custom-accent/80 border border-white/5 px-3 sm:px-4 py-1 rounded-full text-[0.65rem] sm:text-[0.7rem] font-bold tracking-wider uppercase transition-all duration-300 group-hover:text-custom-accent group-hover:border-custom-accent/20">
+                  <span key={i} className="  px-3 py-1.5 rounded-xl text-[9px] sm:text-[12px]  font-bold uppercase tracking-widest  text-custom-accent bg-white/10 border-custom-accent/20 transition-all cursor-default backdrop-blur-sm">
                     {t}
                   </span>
                 ))}

@@ -126,3 +126,13 @@
 .animate-marquee-scroll:hover {
   animation-play-state: paused;
 }
+
+.stroke-text {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.stroke-text:hover {
+  -webkit-text-stroke: 1px transparent;
+  text-shadow: 0 0 20px rgba(122, 242, 152, 0.5);
+}

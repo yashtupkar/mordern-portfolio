@@ -37,7 +37,7 @@ const ProjectsPage = () => {
       
       <main className="pt-[20px]">
         <section className="px-[5%] sm:px-[10%] py-[60px] sm:py-[100px]">
-          <div className="max-w-[1400px] mx-auto">
+          <div className="max-w-[1300px] mx-auto">
             <div className="mb-[60px] text-center fade-in-scroll opacity-0 translate-y-[30px] transition-all duration-600 ease-out">
               <span className="block text-custom-accent font-heading text-xs font-bold tracking-[4px] uppercase mb-4">// PORTFOLIO</span>
               <h1 className="font-heading text-[clamp(1.6rem,5vw,2.8rem)] font-black tracking-tight leading-none uppercase text-custom-main mb-6">
@@ -49,7 +49,7 @@ const ProjectsPage = () => {
               <div className="w-[80px] h-[4px] bg-custom-accent shadow-accent-glow"></div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 lg:gap-x-20 gap-y-12 sm:gap-y-20">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 lg:gap-x-12 gap-y-12 sm:gap-y-20">
               {projects.map((project, index) => (
                 <Link 
                   to={`/project/${project.id}`} 
@@ -73,19 +73,21 @@ const ProjectsPage = () => {
                   </div>
                   
                   <div className="flex flex-col gap-4 px-1">
-                    <div className="flex flex-wrap gap-2">
-                      {project.tech.map((t, i) => (
-                        <span key={i} className="bg-[#1a1a1a] text-custom-accent/80 border border-white/5 px-3 sm:px-4 py-1 rounded-full text-[0.65rem] sm:text-[0.7rem] font-bold tracking-wider uppercase transition-all duration-300 group-hover:text-custom-accent group-hover:border-custom-accent/20">
-                          {t} {i < project.tech.length - 1 && <span className="mx-1 opacity-30">•</span>}
-                        </span>
-                      ))}
-                    </div>
+                   
                     <h3 className="font-heading text-2xl sm:text-3xl font-bold text-white group-hover:text-custom-accent transition-colors duration-300 tracking-tight">
                       {project.title}
                     </h3>
+                    <div className="flex flex-wrap gap-2">
+                      {project.tech.map((t, i) => (
+                        <span key={i} className="  px-3 py-1.5 rounded-xl text-[9px] sm:text-[12px] font-bold uppercase tracking-widest  text-custom-accent bg-white/10 border-custom-accent/20 transition-all cursor-default backdrop-blur-sm">
+                          {t}
+                        </span>
+                      ))}
+                    </div>
                     <p className="text-white/50 text-[0.95rem] sm:text-[1.05rem] leading-relaxed transition-colors duration-300 group-hover:text-white/70 max-w-2xl">
                       {project.desc}
                     </p>
+                    
                     <div className="pt-2">
                       <div className="inline-flex items-center gap-2 text-custom-accent font-bold text-sm tracking-widest uppercase hover:gap-4 transition-all duration-300">
                         View Project Details 

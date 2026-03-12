@@ -81,7 +81,7 @@ const ServicesPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             {processSteps.map((item, index) => (
               <div key={index} className="fade-in-scroll opacity-0 translate-y-[30px] transition-all duration-600 ease-out relative p-8 bg-white/3 border border-white/5 rounded-[2rem] hover:border-custom-accent/30 hover:bg-white/5 transition-all duration-300 group">
-                <div className="absolute top-0 right-0 p-8 text-5xl font-black text-white/5 group-hover:text-custom-accent/10 transition-colors duration-300">
+                <div className="absolute top-0 right-0 p-8 text-5xl font-black text-white/10 group-hover:text-custom-accent/30 transition-colors duration-300">
                   {item.step}
                 </div>
                 <div className="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center text-custom-accent mb-8 group-hover:scale-110 group-hover:bg-custom-accent group-hover:text-black transition-all duration-300 shadow-md">
