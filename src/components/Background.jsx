@@ -20,9 +20,9 @@ const Background = () => {
         className="absolute inset-0"
         style={{
           background:
-            'radial-gradient(ellipse 90% 50% at 5% 0%, rgba(0, 245, 159, 0.32) 0%, transparent 65%),' +
-            'radial-gradient(ellipse 70% 40% at 95% 5%, rgba(0, 217, 255, 0.24) 0%, transparent 60%),' +
-            'radial-gradient(ellipse 60% 35% at 50% 0%, rgba(122, 242, 152, 0.29) 0%, transparent 55%)',
+            'radial-gradient(ellipse 110% 70% at 5% 0%, rgba(0, 245, 159, 0.50) 0%, transparent 65%),' +
+            'radial-gradient(ellipse 90% 60% at 95% 5%, rgba(0, 217, 255, 0.38) 0%, transparent 60%),' +
+            'radial-gradient(ellipse 80% 55% at 50% 0%, rgba(122, 242, 152, 0.45) 0%, transparent 55%)',
         }}
       />
 
