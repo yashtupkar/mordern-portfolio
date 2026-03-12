@@ -120,6 +120,12 @@ const TextPressure = ({
   useEffect(() => {
     let rafId;
     const animate = () => {
+      // Skip if container is not visible (e.g. hidden on mobile)
+      if (!containerRef.current || containerRef.current.offsetParent === null) {
+        rafId = requestAnimationFrame(animate);
+        return;
+      }
+
       mouseRef.current.x += (cursorRef.current.x - mouseRef.current.x) / 15;
       mouseRef.current.y += (cursorRef.current.y - mouseRef.current.y) / 15;
 

@@ -121,8 +121,8 @@ export default function Aurora(props) {
         const renderer = new Renderer({
             alpha: true,
             premultipliedAlpha: true,
-            antialias: true,
-            dpr: window.devicePixelRatio || 1
+            antialias: false,
+            dpr: Math.min(window.devicePixelRatio || 1, 1.5)
         });
         const gl = renderer.gl;
         gl.clearColor(0, 0, 0, 0);
@@ -169,7 +169,16 @@ export default function Aurora(props) {
         ctn.appendChild(gl.canvas);
 
         let animateId = 0;
+        let paused = false;
+
+        const handleVisibilityChange = () => {
+            paused = document.hidden;
+            if (!paused) animateId = requestAnimationFrame(update);
+        };
+        document.addEventListener('visibilitychange', handleVisibilityChange);
+
         const update = t => {
+            if (paused) return;
             animateId = requestAnimationFrame(update);
             const { time = t * 0.01, speed = 1.0 } = propsRef.current;
             program.uniforms.uTime.value = time * speed * 0.1;
@@ -189,6 +198,7 @@ export default function Aurora(props) {
         return () => {
             cancelAnimationFrame(animateId);
             window.removeEventListener('resize', resize);
+            document.removeEventListener('visibilitychange', handleVisibilityChange);
             if (ctn && gl.canvas.parentNode === ctn) {
                 ctn.removeChild(gl.canvas);
             }

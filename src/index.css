@@ -46,6 +46,9 @@
 
   body {
     @apply bg-custom-bg text-custom-main font-body leading-relaxed overflow-x-hidden;
+    touch-action: pan-y;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-y: none;
   }
 
   /* Custom scrollbar */
@@ -75,6 +78,7 @@
 @layer utilities {
   .animate-marquee {
     animation: marquee var(--duration, 40s) linear infinite;
+    will-change: transform;
   }
   
   .appear {
@@ -102,6 +106,16 @@
       black 80%,
       transparent
     );
+  }
+
+  /* Mobile performance: promote animated elements to their own GPU layer */
+  @media (max-width: 767px) {
+    .animate-marquee-scroll,
+    .animate-shimmer,
+    .fade-in-scroll,
+    .slide-up-scroll {
+      will-change: transform, opacity;
+    }
   }
 }
 
