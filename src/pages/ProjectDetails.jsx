@@ -104,7 +104,7 @@ const ProjectDetails = () => {
 
                         {/* Project Image */}
                         <div className="order-1 lg:order-2">
-                            <div className="relative group rounded overflow-hidden border border-white/10 bg-white/3 aspect-video lg:aspect-[1.5/1]">
+                            <div className="relative group rounded overflow-hidden border border-white/10 bg-white/3 aspect-[16/12] lg:aspect-[1.5/1]">
                                 <img
                                     src={project.image}
                                     alt={project.title}
@@ -130,7 +130,7 @@ const ProjectDetails = () => {
                                 </div>
 
                                 <div className="relative group/gallery">
-                                    <div className="overflow-hidden rounded-lg border border-white/10 aspect-video lg:aspect-[1.8/1] bg-white/[0.02] shadow-[0_0_100px_rgba(0,0,0,0.8)]">
+                                    <div className="overflow-hidden rounded-lg border border-white/10 aspect-[16/10] lg:aspect-[1.8/1] bg-white/[0.02] shadow-[0_0_100px_rgba(0,0,0,0.8)]">
                                         <div 
                                             className="flex transition-transform duration-1000 cubic-bezier(0.16, 1, 0.3, 1) h-full"
                                             style={{ transform: `translateX(-${currentSlide * 100}%)` }}

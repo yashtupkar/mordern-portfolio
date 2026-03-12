@@ -33,34 +33,34 @@ const Services = () => {
 
   const ServiceCard = ({ s, i }) => (
     <div 
-      className="group relative flex flex-col justify-between p-6 sm:p-7 bg-white/[0.06] rounded-3xl border border-white/5 cursor-pointer overflow-hidden transition-all duration-500 hover:bg-white/[0.05] hover:border-custom-accent/30 hover:shadow-[0_20px_50px_rgba(0,0,0,0.5)] min-h-[180px] sm:min-h-[200px]" 
+      className="group relative flex flex-col justify-between p-6 sm:p-7 bg-white/[0.05] sm:bg-white/[0.06] rounded-3xl border border-custom-accent/30 sm:border-white/5 shadow-[0_20px_50px_rgba(0,0,0,0.5)] sm:shadow-none cursor-pointer overflow-hidden transition-all duration-500 hover:bg-white/[0.05] hover:border-custom-accent/30 hover:shadow-[0_20px_50px_rgba(0,0,0,0.5)] min-h-[180px] sm:min-h-[200px]" 
       key={i}
       onClick={() => handleCardClick(s.title)}
     >
       {/* Background Index Number */}
-      <div className="absolute top-2 right-4 text-white/[0.10] font-heading text-7xl font-black group-hover:text-custom-accent/[0.3] transition-colors duration-500 select-none pointer-events-none">
+      <div className="absolute top-2 right-4 text-custom-accent/[0.3] sm:text-white/[0.10] font-heading text-7xl font-black group-hover:text-custom-accent/[0.3] transition-colors duration-500 select-none pointer-events-none">
         {s.index}
       </div>
 
-      <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_top_right,rgba(122,242,152,0.08),transparent_70%)] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_top_right,rgba(122,242,152,0.08),transparent_70%)] opacity-100 sm:opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
       
-      <div className="relative z-10 w-[48px] h-[48px] flex items-center justify-center rounded-2xl bg-white/5 border border-white/10 text-custom-main transition-all duration-500 group-hover:bg-custom-accent group-hover:text-black group-hover:shadow-accent-glow group-hover:border-custom-accent group-hover:-translate-y-1 mb-4">
+      <div className="relative z-10 w-[48px] h-[48px] flex items-center justify-center rounded-2xl bg-custom-accent sm:bg-white/5 border border-custom-accent sm:border-white/10 text-black sm:text-custom-main shadow-accent-glow sm:shadow-none -translate-y-1 sm:translate-y-0 transition-all duration-500 group-hover:bg-custom-accent group-hover:text-black group-hover:shadow-accent-glow group-hover:border-custom-accent group-hover:-translate-y-1 mb-4">
         {s.icon}
       </div>
 
       <div className="relative z-10 mt-auto">
         <div className="flex justify-between items-start mb-2">
-          <h3 className="font-heading text-[1.05rem] sm:text-[1.15rem] font-bold leading-tight text-white/90 group-hover:text-white transition-colors">
+          <h3 className="font-heading text-[1.05rem] sm:text-[1.15rem] font-bold leading-tight text-white sm:text-white/90 group-hover:text-white transition-colors">
             {s.title}
           </h3>
-          <div className="text-white/20 transition-all duration-500 group-hover:text-custom-accent group-hover:translate-x-1 group-hover:-translate-y-1">
+          <div className="text-custom-accent sm:text-white/20 translate-x-1 sm:translate-x-0 -translate-y-1 sm:translate-y-0 transition-all duration-500 group-hover:text-custom-accent group-hover:translate-x-1 group-hover:-translate-y-1">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
               <line x1="7" y1="17" x2="17" y2="7"></line>
               <polyline points="7 7 17 7 17 17"></polyline>
             </svg>
           </div>
         </div>
-        <p className="text-custom-muted text-xs sm:text-sm leading-relaxed opacity-60 group-hover:opacity-100 transition-opacity duration-500 line-clamp-2">
+        <p className="text-custom-muted text-xs sm:text-sm leading-relaxed opacity-100 sm:opacity-60 group-hover:opacity-100 transition-opacity duration-500 line-clamp-2">
           {s.description}
         </p>
       </div>
@@ -91,10 +91,10 @@ const Services = () => {
             <ServiceCard s={s} i={i} key={i} />
           ))}
 
-          <a href="mailto:yashtupkar6@gmail.com" className="group lg:row-span-2 flex flex-col justify-between p-7 sm:p-8 bg-custom-accent rounded-3xl shadow-accent-glow overflow-hidden cursor-pointer transition-all duration-500 hover:scale-[1.01] hover:shadow-[0_0_50px_rgba(122,242,152,0.3)] relative min-h-[220px] sm:min-h-0">
+          <a href="mailto:yashtupkar6@gmail.com" className="group lg:row-span-2 flex flex-col justify-between p-7 sm:p-8 bg-custom-accent rounded-3xl shadow-[0_0_50px_rgba(122,242,152,0.3)] sm:shadow-accent-glow scale-[1.01] sm:scale-100 overflow-hidden cursor-pointer transition-all duration-500 hover:scale-[1.01] hover:shadow-[0_0_50px_rgba(122,242,152,0.3)] relative min-h-[220px] sm:min-h-0">
             <div className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(circle_at_bottom_left,rgba(0,0,0,0.05),transparent_60%)]"></div>
             
-            <div className="absolute top-6 right-6 text-black/30 transition-all duration-500 group-hover:text-black group-hover:translate-x-1 group-hover:-translate-y-1">
+            <div className="absolute top-6 right-6 text-black sm:text-black/30 translate-x-1 sm:translate-x-0 -translate-y-1 sm:translate-y-0 transition-all duration-500 group-hover:text-black group-hover:translate-x-1 group-hover:-translate-y-1">
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                 <line x1="7" y1="17" x2="17" y2="7"></line>
                 <polyline points="7 7 17 7 17 17"></polyline>
@@ -102,7 +102,7 @@ const Services = () => {
             </div>
 
             <div className="relative z-10 mt-auto">
-              <div className="w-12 h-12 mb-6 rounded-2xl bg-black/10 backdrop-blur-md border border-black/5 flex items-center justify-center shadow-inner group-hover:bg-black/20 transition-colors duration-500">
+              <div className="w-12 h-12 mb-6 rounded-2xl bg-black/20 sm:bg-black/10 backdrop-blur-md border border-black/5 flex items-center justify-center shadow-inner group-hover:bg-black/20 transition-colors duration-500">
                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                    <polyline points="22,6 12,13 2,6"></polyline>
