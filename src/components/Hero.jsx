@@ -53,12 +53,12 @@ const Hero = () => {
               {heroData.firstName}
             </h1>
             {/* Small screens: plain text */}
-            <h1 className="md:hidden ml-0 text-center font-heading text-[clamp(4rem,15vw,10rem)] font-black leading-[0.85] tracking-[-3px] uppercase text-custom-accent animate-fadeIn [animation-delay:0.2s] opacity-0 [animation-fill-mode:forwards]">
+            <h1 className=" ml-0 text-center font-heading text-[clamp(4rem,15vw,10rem)]  font-black leading-[0.85] tracking-[-3px] uppercase text-custom-accent animate-fadeIn [animation-delay:0.2s] opacity-0 [animation-fill-mode:forwards]">
               {heroData.lastName}.
             </h1>
 
             {/* md+ screens: interactive TextPressure */}
-            <div className="hidden md:block relative w-full lg:w-[100%] h-[clamp(4.5rem,15vw,10rem)] overflow-visible bg-transparent ml-[-4px] sm:ml-[-8px] cursor-pointer animate-fadeIn [animation-delay:0.2s] opacity-0 [animation-fill-mode:forwards]">
+            <div className="hidden  relative w-full lg:w-[100%] h-[clamp(4.5rem,15vw,10rem)] overflow-visible bg-transparent ml-[-4px] sm:ml-[-8px] cursor-pointer animate-fadeIn [animation-delay:0.2s] opacity-0 [animation-fill-mode:forwards]">
               <div className="flex items-center w-full h-full">
                 <TextPressure
                   text={heroData.lastName + '.'}
