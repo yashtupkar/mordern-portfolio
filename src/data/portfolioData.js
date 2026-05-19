@@ -1,152 +1,262 @@
 export const projects = [
   {
+    id: "evsync",
+    title: "EVSync - Smart EV Ecosystem",
+    image: "/assets/projects/evsync1.png",
+    liveLink: "https://ev-sync.vercel.app/",
+    additionalImages: [
+      "/assets/projects/evsync1.png",
+      "/assets/projects/evsync2.png",
+      "/assets/projects/evsync3.png",
+      "/assets/projects/evsync4.png",
+      "/assets/projects/evsync5.png",
+      "/assets/projects/evsync6.png",
+      "/assets/projects/evsync7.png",
+      "/assets/projects/evsync8.png",
+     
+    ],
+    fallback: "https://framerusercontent.com/images/placeholder.png",
+    tech: [
+      "MERN",
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Tailwind",
+      "Leaflet",
+      "Redux",
+    ],
+    desc: "EVSync is a comprehensive EV charging station locator and smart trip planner designed to eliminate range anxiety.",
+    overview:
+      "EVSync helps electric vehicle owners seamlessly plan their journeys by providing real-time charging station locations, smart route optimization based on vehicle battery, and station availability. It features an interactive map for discovering chargers, an intelligent trip planner that calculates optimal charging stops, and a slot booking system.",
+    role: [
+      "Built interactive smart map using React-Leaflet with custom real-time routing overlays",
+      "Developed intelligent Trip Planner that calculates optimal EV charging stops along a route",
+      "Created Node.js/Express backend with MongoDB geospatial queries ($near) for finding nearby stations",
+      "Implemented secure Twilio OTP and Google OAuth authentication for seamless user onboarding",
+    ],
+    techstack: [
+      "Frontend\tReact 19, Vite, Tailwind CSS, Redux Toolkit, React Router, Framer Motion",
+      "Backend\tNode.js, Express.js, MongoDB (Mongoose), Google Auth Library, JWT",
+      "Maps & Routing\tReact-Leaflet, Leaflet Routing Machine, OpenStreetMap/Nominatim API",
+      "Utilities\tCloudinary, Multer, Twilio (OTP verification), Socket.io",
+    ],
+    features: [
+      "Smart Map Discovery → Find EV charging stations nearby filtered by charger type and availability",
+      "Intelligent Trip Planner → Calculates routes and suggests optimal charging stops based on battery range",
+      "Real-time Navigation Simulation → Tracks journey progress with live distance and time estimates",
+      "Secure Authentication → Login via phone OTP (Twilio) or Google OAuth",
+      "Vehicle Management → Personalized charging recommendations based on saved EV models",
+    ],
+  },
+  {
     id: "devplex",
     title: "Devplex",
     image: "/assets/hero-img.png",
     liveLink: "https://devplex.in",
     image: "/assets/projects/devplex.png",
-    additionalImages:["/assets/projects/devplex1.png","/assets/projects/devplex2.png","/assets/projects/devplex3.png"],
-    fallback: "https://framerusercontent.com/images/sB2gGdW0ObzzZYTsMcU5JTcAFw.png?scale-down-to=2048&width=4800&height=3600",
-    tech: ["MERN", "OpenRouter", "Redux", "React", "Node.js", "MongoDB", "Tailwind"],    
-    desc: "Devplex is a full-stack developer agent that turns simple text prompts into complete web and mobile apps.",    
-    overview: "Devplex helps developers build apps fast by understanding plain English descriptions and generating production-ready React/Node code. Type what you want ('e-commerce site with payments') and get a fully working app with frontend, backend, database, and deployment files in minutes. Perfect for rapid prototyping and MVP creation.",    
-    role: [
-    "Built complete AI agent that understands developer needs",
-    "Created React frontend with real-time code streaming",
-    "Developed Node.js backend with AI code generation",
-    "Added login, payments, and project management features"
+    additionalImages: [
+      "/assets/projects/devplex1.png",
+      "/assets/projects/devplex2.png",
+      "/assets/projects/devplex3.png",
     ],
-    techstack: ["Frontend\t	React 18, Vite, Tailwind CSS, Redux, React Router", "Backend\tNode.js, Express.js, MongoDB (Mongoose), Passport, multer", "AI & Agents\tOpenRouter API, custom streaming agent services", "Deployment\tAWS", "Utilities\tCloudinary, Brevo (email),  PayU (payment)"],
+    fallback:
+      "https://framerusercontent.com/images/sB2gGdW0ObzzZYTsMcU5JTcAFw.png?scale-down-to=2048&width=4800&height=3600",
+    tech: [
+      "MERN",
+      "OpenRouter",
+      "Redux",
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Tailwind",
+    ],
+    desc: "Devplex is a full-stack developer agent that turns simple text prompts into complete web and mobile apps.",
+    overview:
+      "Devplex helps developers build apps fast by understanding plain English descriptions and generating production-ready React/Node code. Type what you want ('e-commerce site with payments') and get a fully working app with frontend, backend, database, and deployment files in minutes. Perfect for rapid prototyping and MVP creation.",
+    role: [
+      "Built complete AI agent that understands developer needs",
+      "Created React frontend with real-time code streaming",
+      "Developed Node.js backend with AI code generation",
+      "Added login, payments, and project management features",
+    ],
+    techstack: [
+      "Frontend\t	React 18, Vite, Tailwind CSS, Redux, React Router",
+      "Backend\tNode.js, Express.js, MongoDB (Mongoose), Passport, multer",
+      "AI & Agents\tOpenRouter API, custom streaming agent services",
+      "Deployment\tAWS",
+      "Utilities\tCloudinary, Brevo (email),  PayU (payment)",
+    ],
     features: [
-    "Describe any app → get complete React/Node codebase instantly",
-    "Real-time AI code streaming with progress tracking",
-    "One-click deploy to Vercel/Netlify with all files ready",
-    "Login system with free/paid token plans",
-    "Admin dashboard to manage users and usage"
-  ]
+      "Describe any app → get complete React/Node codebase instantly",
+      "Real-time AI code streaming with progress tracking",
+      "One-click deploy to Vercel/Netlify with all files ready",
+      "Login system with free/paid token plans",
+      "Admin dashboard to manage users and usage",
+    ],
   },
   {
-id: "movieFlix",
-title: "MovieFlix",
+    id: "movieFlix",
+    title: "MovieFlix",
     image: "/assets/projects/movieflix.png",
-type:"mobile",
+    type: "mobile",
     additionalImages: [
-  "/assets/projects/movieflix.png",
-"/assets/projects/movieflix1.png",
-"/assets/projects/movieflix2.png",
-
-],
-fallback: "https://framerusercontent.com/images/sB2gGdW0ObzzZYTsMcU5JTcAFw.png?scale-down-to=2048&width=4800&height=3600",
-tech: ["React Native", "Expo", "TypeScript","JS", "Node", "Express", "MongoDB"],
-    desc: "MovieFlix is a movie discovery app for seamless browsing, searching, and saving favorites across trending titles and personalized recommendations.",
-    overview: "MovieFlix helps movie lovers discover new films through smooth search, trending lists, and personalized watchlists. Users can browse thousands of movies, save favorites that sync across devices, and jump straight to detailed views with cast info and trailers. The clean mobile interface feels native on both iOS and Android.",
-    role: [
-"Frontend built screens, navigation, and components with Expo + React Native",
-"Backend implemented Express API endpoints for search, auth, and user data",
-"Auth JWT-based login and registration flows",
-"Integration connected app to a third-party movie API and local MongoDB"
+      "/assets/projects/movieflix.png",
+      "/assets/projects/movieflix1.png",
+      "/assets/projects/movieflix2.png",
     ],
-    techstack: ["Frontend\tExpo, React Native, TypeScript, nativewind (Tailwind for RN)", "Backend\tNode.js, Express, MongoDB (Mongoose)", "Auth\tJWT, bcrypt", "Dev\tESLint, Metro bundler, Expo CLI"],
+    fallback:
+      "https://framerusercontent.com/images/sB2gGdW0ObzzZYTsMcU5JTcAFw.png?scale-down-to=2048&width=4800&height=3600",
+    tech: [
+      "React Native",
+      "Expo",
+      "TypeScript",
+      "JS",
+      "Node",
+      "Express",
+      "MongoDB",
+    ],
+    desc: "MovieFlix is a movie discovery app for seamless browsing, searching, and saving favorites across trending titles and personalized recommendations.",
+    overview:
+      "MovieFlix helps movie lovers discover new films through smooth search, trending lists, and personalized watchlists. Users can browse thousands of movies, save favorites that sync across devices, and jump straight to detailed views with cast info and trailers. The clean mobile interface feels native on both iOS and Android.",
+    role: [
+      "Frontend built screens, navigation, and components with Expo + React Native",
+      "Backend implemented Express API endpoints for search, auth, and user data",
+      "Auth JWT-based login and registration flows",
+      "Integration connected app to a third-party movie API and local MongoDB",
+    ],
+    techstack: [
+      "Frontend\tExpo, React Native, TypeScript, nativewind (Tailwind for RN)",
+      "Backend\tNode.js, Express, MongoDB (Mongoose)",
+      "Auth\tJWT, bcrypt",
+      "Dev\tESLint, Metro bundler, Expo CLI",
+    ],
 
-features: [
-"Search movies with live suggestions and a SearchBar component",
-"Movie detail pages with images, overview, and metadata",
-"Trending & curated sections on the home screen",
-"User auth: register/login with JWT and protected routes",
-"Save/unsave favorites persisted to user profile",
-"Simple backend endpoints for search, user, and auth"
-]
-},
+    features: [
+      "Search movies with live suggestions and a SearchBar component",
+      "Movie detail pages with images, overview, and metadata",
+      "Trending & curated sections on the home screen",
+      "User auth: register/login with JWT and protected routes",
+      "Save/unsave favorites persisted to user profile",
+      "Simple backend endpoints for search, user, and auth",
+    ],
+  },
   {
     id: "learnexa",
     title: "Learnexa ",
     liveLink: "https://learnexa.xyz",
-    sourceCode:"https://github.com/yashtupkar/Learnexa-AI-Powered-Learning-Platform",
-    additionalImages:["/assets/projects/learnexa1.png","/assets/projects/learnexa2.png", "/assets/projects/learnexa3.png","/assets/projects/learnexa4.png", "/assets/projects/learnexa5.png"],
+    sourceCode:
+      "https://github.com/yashtupkar/Learnexa-AI-Powered-Learning-Platform",
+    additionalImages: [
+      "/assets/projects/learnexa1.png",
+      "/assets/projects/learnexa2.png",
+      "/assets/projects/learnexa3.png",
+      "/assets/projects/learnexa4.png",
+      "/assets/projects/learnexa5.png",
+    ],
     image: "/assets/projects/learnexa.png",
-    fallback: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800",
+    fallback:
+      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800",
     tech: ["MERN", "Gen AI", "NewsAPI", "YoutubeAPI"],
     desc: "AI-powered learning platform with smart quizzes, distraction-free YouTube study mode, aptitude tests, current affairs, and personalized paths for competitive exam prep.",
-    overview: "Learnexa transforms learning with AI-generated quizzes, PDF-to-quiz conversion, coding challenges, distraction-free YouTube, and personalized study plans. Users get smart sessions, progress analytics, and resources for aptitude/reasoning. Plans from free to ₹499/month serve 100+ learners preparing for exams.",
-     role: [
-    "Full-stack development of AI features like quiz generator and personalized paths",
-    "Integrated distraction-free StudyTube and current affairs modules",
-    "Built dashboard, pricing tiers, and progress analytics"
+    overview:
+      "Learnexa transforms learning with AI-generated quizzes, PDF-to-quiz conversion, coding challenges, distraction-free YouTube, and personalized study plans. Users get smart sessions, progress analytics, and resources for aptitude/reasoning. Plans from free to ₹499/month serve 100+ learners preparing for exams.",
+    role: [
+      "Full-stack development of AI features like quiz generator and personalized paths",
+      "Integrated distraction-free StudyTube and current affairs modules",
+      "Built dashboard, pricing tiers, and progress analytics",
     ],
     techstack: [
-    "Frontend\tReact, Vite, Tailwind CSS, React Router",
-    "Backend\tNode.js, Express, MongoDB",
-    "AI & Tools\tOpenRouter, NEWS API, YouTube API",
-    "Deployment\tVercel, Render for backend",
-    "Utilities\tStripe, Email notifications"
+      "Frontend\tReact, Vite, Tailwind CSS, React Router",
+      "Backend\tNode.js, Express, MongoDB",
+      "AI & Tools\tOpenRouter, NEWS API, YouTube API",
+      "Deployment\tVercel, Render for backend",
+      "Utilities\tStripe, Email notifications",
     ],
-      features: [
-    "AI Quiz Generator: Instant adaptive quizzes from subjects or PDFs.",
-    "Distraction-Free YouTube: Focused StudyTube for educational videos.",
-    "Daily Learning Streaks for Consistency",
-    "Aptitude & Reasoning Tests: Curated challenges for competitive exams.",
-    "Current Affairs: Daily digests and analysis for knowledge prep.",
-    "Personalized Learning: Custom paths, smart schedules, and progress insights.",
-    "Coding Challenges: AI-generated problems with study planner and badges."
-  ]
-
+    features: [
+      "AI Quiz Generator: Instant adaptive quizzes from subjects or PDFs.",
+      "Distraction-Free YouTube: Focused StudyTube for educational videos.",
+      "Daily Learning Streaks for Consistency",
+      "Aptitude & Reasoning Tests: Curated challenges for competitive exams.",
+      "Current Affairs: Daily digests and analysis for knowledge prep.",
+      "Personalized Learning: Custom paths, smart schedules, and progress insights.",
+      "Coding Challenges: AI-generated problems with study planner and badges.",
+    ],
   },
   {
     id: "medicare",
     title: "Medicare ",
     image: "/assets/projects/medicare.png",
-    overview: "🚀 Medicare-HMS is an advanced Hospital Management System (HMS) designed to enhance healthcare accessibility, efficiency, and transparency. Built using the MERN stack, it integrates AI-powered disease analysis, appointment management, and real-time hospital bed tracking to streamline hospital operations.",
-    features:[
+    overview:
+      "🚀 Medicare-HMS is an advanced Hospital Management System (HMS) designed to enhance healthcare accessibility, efficiency, and transparency. Built using the MERN stack, it integrates AI-powered disease analysis, appointment management, and real-time hospital bed tracking to streamline hospital operations.",
+    features: [
       "AI-Powered Disease Analysis: Utilizes Google Gemini to analyze symptoms and provide potential disease diagnoses, helping patients make informed decisions.",
       "Real-Time Appointment Booking: Enables patients to book, reschedule, or cancel appointments instantly, reducing wait times and improving patient satisfaction.",
       "Smart Bed Management: Provides real-time updates on hospital bed availability, helping staff allocate resources efficiently and reduce patient wait times.",
       "Secure Authentication: Implements JWT-based authentication with role-based access control to ensure secure access for patients, doctors, and administrators.",
       "Cross-Platform Compatibility: Built with React Native and Expo, ensuring seamless performance across iOS and Android devices.",
-      "Scalable Architecture: Designed with a modular architecture that supports easy integration of new features and services, ensuring long-term scalability and maintainability."
+      "Scalable Architecture: Designed with a modular architecture that supports easy integration of new features and services, ensuring long-term scalability and maintainability.",
     ],
-    sourceCode:"https://github.com/yashtupkar/New-HMS",
+    sourceCode: "https://github.com/yashtupkar/New-HMS",
     tech: ["MERN", "GenAI", "Redux", "Socket.io", "WebRTC"],
-    role: ["Full‑stack development of both backend services and frontend UI", "AI integration using OpenRouter (Claude Sonnet 4.5) for code generation", "Streamed responses with real‑time parsing and token tracking", "Authentication & billing (JWT, OAuth, subscription tokens)"],
-    liveLink:"https://medicare-hms.vercel.app/",
-    fallback: "https://images.unsplash.com/photo-1538108149393-ceb66fa1e738?auto=format&fit=crop&q=80&w=800",
-    techstack: ["Frontend\t	React 18, Vite, Tailwind CSS, Redux, React Router", "Backend\tNode.js, Express.js, MongoDB (Mongoose), Passport, Multer", "AI & Agents\tOpenRouter API, Custom streaming agent services", "Deployment\tVercel (frontend), Docker, Render (backend)", "Utilities\tCloudinary, Brevo (email), PhonePe, PayU payment APIs"],
-    desc: "A smart hospital management system with real-time Socket.io for patient queue management, secure NoSQL schemas, GCP deployment with 30% performance improvement, and full unit testing coverage."
+    role: [
+      "Full‑stack development of both backend services and frontend UI",
+      "AI integration using OpenRouter (Claude Sonnet 4.5) for code generation",
+      "Streamed responses with real‑time parsing and token tracking",
+      "Authentication & billing (JWT, OAuth, subscription tokens)",
+    ],
+    liveLink: "https://medicare-hms.vercel.app/",
+    fallback:
+      "https://images.unsplash.com/photo-1538108149393-ceb66fa1e738?auto=format&fit=crop&q=80&w=800",
+    techstack: [
+      "Frontend\t	React 18, Vite, Tailwind CSS, Redux, React Router",
+      "Backend\tNode.js, Express.js, MongoDB (Mongoose), Passport, Multer",
+      "AI & Agents\tOpenRouter API, Custom streaming agent services",
+      "Deployment\tVercel (frontend), Docker, Render (backend)",
+      "Utilities\tCloudinary, Brevo (email), PhonePe, PayU payment APIs",
+    ],
+    desc: "A smart hospital management system with real-time Socket.io for patient queue management, secure NoSQL schemas, GCP deployment with 30% performance improvement, and full unit testing coverage.",
   },
 
-{
-  id: "snapnart",
-  title: "Snapnart Studio Portfolio",
-  image: "/assets/projects/snapnart.png",
-  additionalImages: ["/assets/projects/snapnart1.png","/assets/projects/snapnart2.png","/assets/projects/snapnart3.png","/assets/projects/snapnart4.png","/assets/projects/snapnart5.png"],
-  liveLink: "https://snapnartstudio-2ee4f.web.app/",
-  overview: "Snapnart Studio is a modern portfolio website for professional animator Rushab Kumeria. It showcases 3D kids animations, character design, and video editing work with smooth scrolling, responsive design, and engaging animations that highlight the studio's creative services.",
-  features: [
-    "Animated hero section with smooth scroll-triggered effects",
-    "Responsive portfolio gallery showcasing animation projects", 
-    "Service pages for 3D animation, character design, video editing",
-    "Client testimonial section with stats (20+ projects, 5 years experience)",
-    "Contact form with social media integration (Instagram, YouTube, Fiverr)",
-    "Clean navigation with Home, About, Portfolio, Services, Contact sections"
-  ],
-  sourceCode: "https://github.com/yashtupkar/Client-s-Portfolio",
-  tech: ["React", "Tailwind", "Vite", "Firebase"],
-  role: [
+  {
+    id: "snapnart",
+    title: "Snapnart Studio Portfolio",
+    image: "/assets/projects/snapnart.png",
+    additionalImages: [
+      "/assets/projects/snapnart1.png",
+      "/assets/projects/snapnart2.png",
+      "/assets/projects/snapnart3.png",
+      "/assets/projects/snapnart4.png",
+      "/assets/projects/snapnart5.png",
+    ],
+    liveLink: "https://snapnartstudio-2ee4f.web.app/",
+    overview:
+      "Snapnart Studio is a modern portfolio website for professional animator Rushab Kumeria. It showcases 3D kids animations, character design, and video editing work with smooth scrolling, responsive design, and engaging animations that highlight the studio's creative services.",
+    features: [
+      "Animated hero section with smooth scroll-triggered effects",
+      "Responsive portfolio gallery showcasing animation projects",
+      "Service pages for 3D animation, character design, video editing",
+      "Client testimonial section with stats (20+ projects, 5 years experience)",
+      "Contact form with social media integration (Instagram, YouTube, Fiverr)",
+      "Clean navigation with Home, About, Portfolio, Services, Contact sections",
+    ],
+    sourceCode: "https://github.com/yashtupkar/Client-s-Portfolio",
+    tech: ["React", "Tailwind", "Vite", "Firebase"],
+    role: [
       "Designed modern UI/UX for animation studio portfolio",
-    "Coded responsive frontend with smooth scroll animations",
-    "Built portfolio gallery and service showcase sections",
-    "Firebase hosting and contact form functionality"
-  ],
-  fallback: "https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&q=80&w=800",
-  techstack: [
-    "Frontend\tReact 18, Vite, Tailwind CSS, Framer Motion",
-    "Hosting\tFirebase",
-    "Animations\tCSS transitions, scroll-triggered effects",
-    "Responsive\tMobile-first design, Tailwind breakpoints"
-  ],
-  desc: "Modern portfolio website for animation studio showcasing 3D kids animation, character design, and 4K video editing services with smooth animations and responsive design."
-}
-
-
+      "Coded responsive frontend with smooth scroll animations",
+      "Built portfolio gallery and service showcase sections",
+      "Firebase hosting and contact form functionality",
+    ],
+    fallback:
+      "https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&q=80&w=800",
+    techstack: [
+      "Frontend\tReact 18, Vite, Tailwind CSS, Framer Motion",
+      "Hosting\tFirebase",
+      "Animations\tCSS transitions, scroll-triggered effects",
+      "Responsive\tMobile-first design, Tailwind breakpoints",
+    ],
+    desc: "Modern portfolio website for animation studio showcasing 3D kids animation, character design, and 4K video editing services with smooth animations and responsive design.",
+  },
 ];
 
 export const heroData = {
