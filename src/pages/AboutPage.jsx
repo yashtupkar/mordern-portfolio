@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import LinkedInPostCard from '../components/LinkedInPostCard';
 import { aboutData, resumeData } from '../data/portfolioData';
 
 const AboutPage = () => {
@@ -170,12 +171,18 @@ const AboutPage = () => {
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {resumeData.awards.map((item, i) => (
-                <div className="group relative bg-white/3 border border-white/5 rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:border-custom-accent/30 hover:bg-white/5 overflow-hidden" key={i}>
-                  <div className="absolute -right-10 -top-10 w-32 h-32 bg-custom-accent/10 rounded-full blur-[30px] group-hover:bg-custom-accent/20 transition-colors duration-500"></div>
-                  <span className="inline-block mb-3 text-[0.8rem] font-bold text-custom-accent bg-custom-accent/10 px-3 py-1 rounded-full tracking-wider uppercase">{item.date}</span>
-                  <h4 className="font-heading text-[1.3rem] text-custom-main font-bold mb-2 group-hover:text-custom-accent transition-colors">{item.title}</h4>
-                  <p className="text-[1rem] text-custom-main/90 font-medium mb-3">{item.company}</p>
-                  <p className="text-[0.9rem] text-custom-muted leading-relaxed">{item.desc}</p>
+                <div key={i}>
+                  {item.linkedInPost ? (
+                    <LinkedInPostCard award={item} index={i} />
+                  ) : (
+                    <div className="group relative bg-white/3 border border-white/5 rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:border-custom-accent/30 hover:bg-white/5 overflow-hidden">
+                      <div className="absolute -right-10 -top-10 w-32 h-32 bg-custom-accent/10 rounded-full blur-[30px] group-hover:bg-custom-accent/20 transition-colors duration-500"></div>
+                      <span className="inline-block mb-3 text-[0.8rem] font-bold text-custom-accent bg-custom-accent/10 px-3 py-1 rounded-full tracking-wider uppercase">{item.date}</span>
+                      <h4 className="font-heading text-[1.3rem] text-custom-main font-bold mb-2 group-hover:text-custom-accent transition-colors">{item.title}</h4>
+                      <p className="text-[1rem] text-custom-main/90 font-medium mb-3">{item.company}</p>
+                      <p className="text-[0.9rem] text-custom-muted leading-relaxed">{item.desc}</p>
+                    </div>
+                  )}
                 </div>
               ))}
             </div>

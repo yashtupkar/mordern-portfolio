@@ -2,7 +2,7 @@ export const projects = [
   {
     id: "evsync",
     title: "EVSync - Smart EV Ecosystem",
-    image: "/assets/projects/evsync1.png",
+    image: "/assets/projects/evsync.png",
     liveLink: "https://ev-sync.vercel.app/",
     additionalImages: [
       "/assets/projects/evsync1.png",
@@ -13,8 +13,8 @@ export const projects = [
       "/assets/projects/evsync6.png",
       "/assets/projects/evsync7.png",
       "/assets/projects/evsync8.png",
-     
     ],
+    sourceCode: "https://github.com/yashtupkar/EVSync",
     fallback: "https://framerusercontent.com/images/placeholder.png",
     tech: [
       "MERN",
@@ -297,45 +297,100 @@ export const resumeData = {
   about: {
     text: "I am a results-driven Computer Science graduate and passionate full-stack developer specializing in the MERN stack. I thrive on architecting scalable front-end experiences (React) and robust backend solutions (Node.js/Express). Beyond crafting seamless RESTful APIs and optimizing databases, I have hands-on expertise in deploying high-performance applications across cloud environments (AWS/GCP). My approach blends strong problem-solving skills with Agile methodologies, ensuring secure, maintainable code and exceptional digital experiences.",
     info: [
-      { label: 'Name', value: 'Yash Tupkar' },
-      { label: 'Nationality', value: 'India' },
-      { label: 'Phone', value: '+91 7898297769' },
-      { label: 'Email', value: 'yashtupkar6@gmail.com' },
-      { label: 'Experience', value: '3+ Years' },
-      { label: 'Languages', value: 'Hindi, English, Marathi' }
-    ]
+      { label: "Name", value: "Yash Tupkar" },
+      { label: "Nationality", value: "India" },
+      { label: "Phone", value: "+91 7898297769" },
+      { label: "Email", value: "yashtupkar6@gmail.com" },
+      { label: "Experience", value: "3+ Years" },
+      { label: "Languages", value: "Hindi, English, Marathi" },
+    ],
   },
   experience: [
-    { date: '2023 - Present', title: 'MERN Stack Developer', company: 'Freelance / Open Source', desc: "Developing end-to-end web applications using React, Node.js, and MongoDB. Implementing secure authentication and real-time features." },
-    { date: 'Dec 2024 - Jan 2026', title: 'Software Developer (Full Stack) Intern', company: 'Devplex', highlight: 'MERN Stack & GenAI', desc: "Developing Devplex An Ai Powered Website Developer" }
+    {
+      date: "2023 - Present",
+      title: "MERN Stack Developer",
+      company: "Freelance / Open Source",
+      desc: "Developing end-to-end web applications using React, Node.js, and MongoDB. Implementing secure authentication and real-time features.",
+    },
+    {
+      date: "June 2025 - March 2026",
+      title: "Founding Software Developer Intern",
+      company: "Devplex",
+      highlight: "MERN Stack & GenAI",
+      desc: "Developing Devplex An Ai Powered Website Developer",
+    },
   ],
   education: [
-    { date: '2022 – 2026', title: 'B.Tech in CS Engineering', company: 'Sagar Institute of Science Technology and Research, Bhopal', highlight: 'CGPA: 7.73/10' },
-    { date: '2021 – 2022', title: '12th Grade (PCM)', company: 'Govt. Excellence Higher Secondary School Sausar', highlight: 'Percentage: 68.8%' },
-    { date: '2019 – 2020', title: '10th Grade', company: 'Govt. Excellence Higher Secondary School Sausar', highlight: 'Percentage: 83.0%' }
+    {
+      date: "2022 – 2026",
+      title: "B.Tech in CS Engineering",
+      company: "Sagar Institute of Science Technology and Research, Bhopal",
+      highlight: "CGPA: 7.73/10",
+    },
+    {
+      date: "2021 – 2022",
+      title: "12th Grade (PCM)",
+      company: "Govt. Excellence Higher Secondary School Sausar",
+      highlight: "Percentage: 68.8%",
+    },
+    {
+      date: "2019 – 2020",
+      title: "10th Grade",
+      company: "Govt. Excellence Higher Secondary School Sausar",
+      highlight: "Percentage: 83.0%",
+    },
   ],
   skills: [
-    { name: 'ReactJS', icon: 'react/react-original.svg' },
-    { name: 'Node.js', icon: 'nodejs/nodejs-original.svg' },
-    { name: 'MongoDB', icon: 'mongodb/mongodb-original.svg' },
-    { name: 'Express', icon: 'express/express-original.svg', filter: true },
-    { name: 'JS (ES6+)', icon: 'javascript/javascript-original.svg' },
-    { name: 'Next.js', icon: 'simple-icons:nextdotjs', filter: true },
-    { name: 'C++', icon: 'cplusplus/cplusplus-original.svg' },
-    { name: 'Tailwind', icon: 'tailwindcss/tailwindcss-original.svg' },
-    { name: 'Redux', icon: 'redux/redux-original.svg' },
-    { name: 'AWS', icon: 'amazonwebservices/amazonwebservices-original-wordmark.svg', filter: true },
-    { name: 'GCP', icon: 'googlecloud/googlecloud-original.svg' },
-    { name: 'Docker', icon: 'docker/docker-original.svg' },
-    { name: 'GitHub', icon: 'github/github-original.svg', filter: true },
-    { name: 'SQL', icon: 'postgresql/postgresql-original.svg' },
-    { name: 'Figma', icon: 'figma/figma-original.svg' }
+    { name: "ReactJS", icon: "react/react-original.svg" },
+    { name: "Node.js", icon: "nodejs/nodejs-original.svg" },
+    { name: "MongoDB", icon: "mongodb/mongodb-original.svg" },
+    { name: "Express", icon: "express/express-original.svg", filter: true },
+    { name: "JS (ES6+)", icon: "javascript/javascript-original.svg" },
+    { name: "Next.js", icon: "simple-icons:nextdotjs", filter: true },
+    { name: "C++", icon: "cplusplus/cplusplus-original.svg" },
+    { name: "Tailwind", icon: "tailwindcss/tailwindcss-original.svg" },
+    { name: "Redux", icon: "redux/redux-original.svg" },
+    {
+      name: "AWS",
+      icon: "amazonwebservices/amazonwebservices-original-wordmark.svg",
+      filter: true,
+    },
+    { name: "GCP", icon: "googlecloud/googlecloud-original.svg" },
+    { name: "Docker", icon: "docker/docker-original.svg" },
+    { name: "GitHub", icon: "github/github-original.svg", filter: true },
+    { name: "SQL", icon: "postgresql/postgresql-original.svg" },
+    { name: "Figma", icon: "figma/figma-original.svg" },
   ],
   awards: [
-    { date: 'Nov 2025', title: 'Winner', company: 'SISTec Innovation Hackathon 2025', desc: "Achieved 1st place among 50+ teams by building an AI-driven solution for real-world problems." },
-    { date: 'Feb 2025', title: 'Winner', company: 'National Science Day Project Expo', highlight: 'Innovative Healthcare software', desc: "Awarded for excellence in demonstrating a high-performance healthcare management system." }
+    {
+      date: "Nov 2025",
+      title: "Winner",
+      company: "SISTec Innovation Hackathon 2025",
+      desc: "Achieved 1st place among 50+ teams by building an AI-driven solution for real-world problems.",
+      linkedInPost: {
+        url: "https://www.linkedin.com/posts/yash-tupkar_hackathon-innovation-techcommunity-activity-7393650632773140480-l1F0?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEaU1lEBHrRsYpI2xLO2vE2WLUVgZQqIzXE",
+        image: "/assets/awards/hackathon-award.jpg",
+        caption: "Proud winner of SISTec Innovation Hackathon 2025 🏆",
+        excerpt:
+          "Led a team of 4 engineers to build an AI solution that won 1st place among 50+ teams.",
+      },
+    },
+    {
+      date: "Feb 2025",
+      title: "Winner",
+      company: "National Science Day Project Expo",
+      highlight: "Innovative Healthcare software",
+      desc: "Awarded for excellence in demonstrating a high-performance healthcare management system.",
+      linkedInPost: {
+        url: "https://www.linkedin.com/posts/yash-tupkar_teamcodex-nationalscienceday-sistecr-activity-7302927003513417730-sVt-?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEaU1lEBHrRsYpI2xLO2vE2WLUVgZQqIzXE",
+        image: "/assets/awards/science-day-award.jpg",
+        caption: "Recognized at National Science Day Project Expo 🎖️",
+        excerpt:
+          "Healthcare management system recognized for innovation and performance at National Science Day.",
+      },
+    },
   ],
-  resumeUrl: "/assets/resume/resume.pdf"
+  resumeUrl: "/assets/resume/resume.pdf",
 };
 
 export const servicesData = [
